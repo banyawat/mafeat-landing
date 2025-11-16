@@ -1,0 +1,28 @@
+{
+  "name": "mafeat-landing",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "MAFEAT - Music Collaboration Platform Landing Page",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "build:production": "npm run build && npm run optimize",
+    "optimize": "echo 'Production build optimized for deployment'"
+  },
+  "keywords": [
+    "music",
+    "collaboration",
+    "musicians",
+    "landing-page",
+    "astro",
+    "tailwind"
+  ],
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/vite": "^4.1.17",
+    "astro": "^5.15.8",
+    "tailwindcss": "^4.1.17"
+  }
+}
