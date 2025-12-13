@@ -11,7 +11,23 @@ const { title } = Astro.props;
 <html lang="th">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="MAFEAT - เชื่อมต่อกับนักดนตรี หาพันธมิตรในการทำงาน และเข้าร่วมชุมชนดนตรี" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="MAFEAT - แพลตฟอร์มเชื่อมต่อนักดนตรีไทย หาพันธมิตรทำเพลงใกล้บ้าน จากชุมชน 4,000+ สมาชิก สู่ระบบการทำงานร่วมกันที่ครบครัน พร้อมแผนที่แสดงตำแหน่ง ฟอรัมชุมชน และระบบติดต่อโดยตรง"
+    />
+    <meta name="keywords" content="นักดนตรีไทย, หาพันธมิตรดนตรี, ทำเพลงร่วมกัน, ชุมชนนักดนตรี, หาวงดนตรี, collaboration ดนตรี, แผนที่นักดนตรี, ฟอรัมดนตรี, musician thailand, music collaboration" />
+    <meta property="og:title" content="MAFEAT - แพลตฟอร์มเชื่อมต่อนักดนตรีไทย" />
+    <meta property="og:description" content="จากชุมชน Facebook 4,000+ สมาชิก สู่แพลตฟอร์มเชื่อมต่อนักดนตรีที่ครบครัน ค้นหาพันธมิตรทำเพลงใกล้บ้าน ใช้งานฟรี" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MAFEAT - แพลตฟอร์มเชื่อมต่อนักดนตรีไทย" />
+    <meta name="twitter:description" content="จากชุมชน Facebook 4,000+ สมาชิก สู่แพลตฟอร์มเชื่อมต่อนักดนตรีที่ครบครัน" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
@@ -20,7 +36,7 @@ const { title } = Astro.props;
         scroll-behavior: smooth;
       }
       body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-family: Kanit, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       }
     </style>
   </head>

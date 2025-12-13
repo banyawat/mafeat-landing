@@ -1,14 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="MAFEAT - เชื่อมต่อ สร้างสรรค์ ทำเพลงร่วมกัน">
+<Layout title="MAFEAT - แพลตฟอร์มเชื่อมต่อนักดนตรีไทย หาพันธมิตรทำเพลงใกล้บ้าน">
   <!-- Navigation -->
   <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
         <div class="flex items-center">
+          <img src="/images/logo_sm.png" class="w-8 h-8 mr-2" />
           <div class="flex-shrink-0">
             <span class="text-2xl font-bold gradient-text">MAFEAT</span>
           </div>
@@ -17,18 +18,41 @@ import Layout from '../layouts/Layout.astro';
         <!-- Navigation Links -->
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-8">
-            <a href="#features" class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors">คุณสมบัติ</a>
-            <a href="#how-it-works" class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors">วิธีใช้งาน</a>
-            <a href="#community" class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors">ชุมชน</a>
-            <a href="https://app.mafeat.com" class="btn-primary">เริ่มต้นใช้งาน</a>
+            <a
+              href="#features"
+              class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors"
+              >คุณสมบัติ</a
+            >
+            <a
+              href="#how-it-works"
+              class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors"
+              >วิธีใช้งาน</a
+            >
+            <a
+              href="#community"
+              class="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium transition-colors"
+              >ชุมชน</a
+            >
+            <a href="https://app.mafeat.com" class="btn-primary"
+              >เริ่มต้นใช้งาน</a
+            >
           </div>
         </div>
 
         <!-- Mobile menu button -->
         <div class="md:hidden">
           <button type="button" class="text-gray-700 hover:text-purple-600 p-2">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
         </div>
@@ -37,65 +61,127 @@ import Layout from '../layouts/Layout.astro';
   </nav>
 
   <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-50 via-white to-cyan-50">
-    <div class="absolute inset-0 bg-gradient-to-r from-purple-600/5 to-cyan-600/5"></div>
+  <section
+    class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-50 via-white to-cyan-50"
+  >
+    <div
+      class="absolute inset-0 bg-gradient-to-r from-purple-600/5 to-cyan-600/5"
+    >
+    </div>
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div class="max-w-4xl mx-auto">
         <!-- Hero badge -->
-        <div class="inline-flex items-center px-4 py-2 bg-purple-100 rounded-full text-purple-700 text-sm font-medium mb-8">
+        <div
+          class="inline-flex items-center px-4 py-2 bg-purple-100 rounded-full text-purple-700 text-sm font-medium mb-8"
+        >
           <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            <path
+              d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+            ></path>
           </svg>
-          แพลตฟอร์มการทำงานร่วมกันทางดนตรีที่ครบวงจร
+          ✨ เปิดตัวเร็วๆ นี้ - สำหรับชุมชนนักดนตรี 4,000+ คน
         </div>
 
         <!-- Main heading -->
-        <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-          เชื่อมต่อ สร้างสรรค์ &
-          <span class="gradient-text">ทำเพลงร่วมกัน</span>
+        <h1
+          class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight"
+        >
+          จากกลุ่ม Facebook
+          <span class="gradient-text">สู่แพลตฟอร์มเชื่อมต่อนักดนตรีไทย</span>
         </h1>
 
         <!-- Subheading -->
-        <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-          ค้นหานักดนตรีใกล้บ้าน หาพันธมิตรที่เหมาะสม และเข้าร่วมชุมชนของผู้สร้างสรรค์ดนตรีที่กำลังเติบโต
-          จากวงดนตรีในโกดังไปจนถึงโปรเจคระดับมืออาชีพ - ผจญภัยทางดนตรีครั้งต่อไปของคุณเริ่มตรงนี้
+        <p
+          class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed"
+        >
+          หาพันธมิตรทำเพลงใกล้บ้านด้วยแผนที่แบบเรียลไทม์ ชุมชนของเรามี <strong
+            >4,000+ สมาชิก</strong
+          > บน Facebook และตอนนี้เรากำลังสร้างแพลตฟอร์มเฉพกิจ พร้อมระบบแผนที่ ฟอรัม
+          และการติดต่อโดยตรง
+          <br /><strong class="text-purple-600">เป็นคนแรกที่เข้าร่วม</strong>
         </p>
 
         <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-          <a href="https://app.mafeat.com" class="btn-primary text-lg px-10 py-4 w-full sm:w-auto">
-            เริ่มทำงานร่วมกันทันที
-            <svg class="w-5 h-5 ml-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+        >
+          <a
+            href="https://app.mafeat.com"
+            class="btn-primary text-lg px-10 py-4 w-full sm:w-auto"
+          >
+            🎯 ลงทะเบียนรับสิทธิ์ Early Access
+            <svg
+              class="w-5 h-5 ml-2 inline-block"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
             </svg>
           </a>
-          <a href="#features" class="btn-secondary text-lg px-10 py-4 w-full sm:w-auto">
-            สำรวจคุณสมบัติ
+          <a
+            href="#features"
+            class="btn-secondary text-lg px-10 py-4 w-full sm:w-auto"
+          >
+            ดูคุณสมบัติทั้งหมด
           </a>
         </div>
 
         <!-- Social proof -->
-        <div class="flex items-center justify-center space-x-8 text-gray-500">
-          <div class="flex items-center">
-            <svg class="w-5 h-5 mr-2 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-6 text-gray-500"
+        >
+          <div
+            class="flex items-center bg-white px-6 py-3 rounded-full shadow-sm"
+          >
+            <svg
+              class="w-5 h-5 mr-2 text-blue-600"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+              ></path>
             </svg>
-            <span class="text-sm">เชื่อมต่อนักดนตรี 500+ คน</span>
+            <span class="text-sm font-medium text-gray-700"
+              >ชุมชน Facebook <strong class="text-blue-600">4,000+</strong> คน</span
+            >
           </div>
-          <div class="flex items-center">
-            <svg class="w-5 h-5 mr-2 text-cyan-600" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          <div
+            class="flex items-center bg-white px-6 py-3 rounded-full shadow-sm"
+          >
+            <svg
+              class="w-5 h-5 mr-2 text-purple-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                clip-rule="evenodd"></path>
             </svg>
-            <span class="text-sm">เริ่มโปรเจค 200+ โปรเจค</span>
+            <span class="text-sm font-medium text-gray-700"
+              >เปิดตัว <strong class="text-purple-600">เร็วๆ นี้</strong></span
+            >
           </div>
         </div>
       </div>
     </div>
 
     <!-- Background decoration -->
-    <div class="absolute top-20 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
-    <div class="absolute bottom-20 left-10 w-72 h-72 bg-cyan-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
+    <div
+      class="absolute top-20 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 left-10 w-72 h-72 bg-cyan-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"
+    >
+    </div>
   </section>
 
   <!-- Features Section -->
@@ -103,120 +189,399 @@ import Layout from '../layouts/Layout.astro';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-gray-900 mb-4">
-          ทุกสิ่งที่คุณต้องการเพื่อ<span class="gradient-text">ทำเพลงร่วมกัน</span>
+          ทำไมต้อง <span class="gradient-text">MAFEAT</span>?
         </h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          คุณสมบัติอันทรงพลังที่ออกแบบมาเพื่อเชื่อมต่อนักดนตรีและสนับสนุนการสร้างสรรค์ร่วมกัน
+          กลุ่ม Facebook ไม่เพียงพอในการจัดการชุมชนนักดนตรีอีกต่อไป
+          เราสร้างแพลตฟอร์มที่ออกแบบมาเฉพาะสำหรับการหาพันธมิตรทำเพลง
         </p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Feature 1: Interactive Map -->
         <div class="card-shadow p-8 text-center group">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">แผนที่การทำงานร่วมกันแบบอินเตอร์แอกทีฟ</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            หาพันธมิตรด้วยแผนที่แบบเรียลไทม์
+          </h3>
           <p class="text-gray-600 mb-4">
-            ค้นพบนักดนตรีและโอกาสในการทำงานร่วมกันใกล้คุณด้วยแผนที่แบบเรียลไทม์ กรองตามประเภทดนตรี ระดับทักษะ และความพร้อม
+            ปัญหา: โพสต์หาพันธมิตรบน Facebook หายไปในฟีด ไม่รู้ว่าใครอยู่ใกล้ตัว<br
+            />
+            <strong class="text-purple-600">วิธีแก้:</strong> ปักหมุดตำแหน่งบนแผนที่
+            ดูใครอยู่ใกล้คุณ กรองตามประเภทดนตรี
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>อัปเดตตำแหน่งแบบเรียลไทม์</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>กรองตามประเภทดนตรี</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>ปกป้องความเป็นส่วนตัว</li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-purple-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >แสดงตำแหน่งบนแผนที่
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-purple-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >ค้นหาตามประเภทเพลง
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-purple-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >โพสต์หมดอายุอัตโนมัติ 30 วัน
+            </li>
           </ul>
         </div>
 
         <!-- Feature 2: Community Forum -->
         <div class="card-shadow p-8 text-center group">
-          <div class="w-16 h-16 bg-gradient-to-br from-cyan-600 to-cyan-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-cyan-600 to-cyan-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">ฟอรัมชุมชนที่คึกคัก</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            ฟอรัมชุมชนที่จัดระเบียบได้
+          </h3>
           <p class="text-gray-600 mb-4">
-            เข้าร่วมการอภิปราย แชร์ความรู้ และเรียนรู้จากนักดนตรีคนอื่นๆ ตั้งแต่ทฤษฎีดนตรีไปจนถึงเคล็ดลับการผลิต
+            ปัญหา: คอมเมนต์บน Facebook ยาวๆ ยากต่อการติดตาม
+            ค้นหาข้อมูลเก่าไม่เจอ<br />
+            <strong class="text-cyan-600">วิธีแก้:</strong> ฟอรัมที่แบ่งหมวดหมู่ ค้นหาง่าย
+            จัดเก็บความรู้ของชุมชน
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-cyan-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>หมวดหมู่ตามหัวข้อ</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-cyan-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>รองรับ Markdown</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-cyan-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>ผู้ดูแลมืออาชีพ</li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-cyan-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >จัดหมวดหมู่ตามหัวข้อ
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-cyan-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >ค้นหาและอ้างอิงได้ง่าย
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-cyan-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >เขียน Markdown ได้
+            </li>
           </ul>
         </div>
 
         <!-- Feature 3: Easy Authentication -->
         <div class="card-shadow p-8 text-center group">
-          <div class="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">การยืนยันตัวตนที่ปลอดภัยและง่าย</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            เข้าสู่ระบบง่ายด้วย Social Login
+          </h3>
           <p class="text-gray-600 mb-4">
-            เข้าสู่ระบบทันทีด้วยบัญชีโซเชียลโปรดของคุณ ไม่ต้องจดจำรหัสผ่าน เพียงการเข้าถึงที่ปลอดภัยไปยังฟีเจอร์ทั้งหมด
+            ปัญหา: ไม่อยากจดจำรหัสผ่านอีก<br />
+            <strong class="text-amber-600">วิธีแก้:</strong> เข้าสู่ระบบด้วย Google,
+            Facebook หรือ LINE ในคลิกเดียว
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>เข้าสู่ระบบ Google, Facebook & LINE</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>ความปลอดภัยของ AWS Cognito</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>ตั้งค่าโปรไฟล์ครั้งเดียว</li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-amber-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >Google / Facebook / LINE
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-amber-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >ไม่ต้องจดจำรหัสผ่าน
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-amber-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >ปลอดภัย เชื่อถือได้
+            </li>
           </ul>
         </div>
 
         <!-- Feature 4: Smart Notifications -->
         <div class="card-shadow p-8 text-center group">
-          <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">การแจ้งเตือนอัจฉริยะ</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            ติดต่อนักดนตรีได้โดยตรง
+          </h3>
           <p class="text-gray-600 mb-4">
-            อัปเดตโอกาสในการทำงานร่วมกันและกิจกรรมของชุมชน ปรับแต่งการตั้งค่าการแจ้งเตือนให้เข้ากับรูปแบบการทำงานของคุณ
+            ปัญหา: ต้องคอมเมนต์บน Facebook แล้วรอนักดนตรีคนนั้นเห็น<br />
+            <strong class="text-green-600">วิธีแก้:</strong> กดติดต่อโดยตรง ระบบส่งอีเมลแจ้งเตือนอัตโนมัติ
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>การแจ้งเตือนทางอีเมล</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>ปรับแต่งได้ตามต้องการ</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>ไม่พลาดโอกาส</li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-green-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >ติดต่อผ่านอีเมล
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-green-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >ปิด-เปิดแจ้งเตือนได้
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-green-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >ไม่เปิดเผยอีเมลส่วนตัว
+            </li>
           </ul>
         </div>
 
         <!-- Feature 5: Profile Management -->
         <div class="card-shadow p-8 text-center group">
-          <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">โปรไฟล์ผู้ใช้แบบไดนามิก</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            โปรไฟล์นักดนตรี
+          </h3>
           <p class="text-gray-600 mb-4">
-            แสดงเส้นทางทางดนตรีของคุณด้วยโปรไฟล์ที่ครบถ้วน แสดงทักษะ ประเภทดนตรี และประวัติการทำงานร่วมกัน
+            แสดงข้อมูลนักดนตรี ประวัติการทำงานร่วมกัน และสถิติกิจกรรม
+            ทำให้คนอื่นรู้จักคุณ
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>สถิติกิจกรรม</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>การผสานรวมพอร์ตโฟลิโอ</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>อัปโหลดรูปภาพโปรไฟล์</li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-indigo-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >แสดงสถิติกิจกรรม
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-indigo-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >ดูประวัติโพสต์
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-indigo-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >อัปโหลดรูปโปรไฟล์
+            </li>
           </ul>
         </div>
 
         <!-- Feature 6: Mobile Responsive -->
         <div class="card-shadow p-8 text-center group">
-          <div class="w-16 h-16 bg-gradient-to-br from-pink-600 to-pink-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-pink-600 to-pink-700 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-3">การออกแบบแบบ Mobile-First</h3>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            ใช้งานได้ทั้งมือถือและคอม
+          </h3>
           <p class="text-gray-600 mb-4">
-            เชื่อมต่อกับนักดนตรีขณะเดินทาง แพลตฟอร์มของเราทำงานราบรื่นบนอุปกรณ์ทุกชนิด จากเดสก์ท็อปไปจนถึงมือถือ
+            หานักดนตรีได้ทุกที่ทุกเวลา ใช้งานบนมือถือ แท็บเล็ต และคอมพิวเตอร์
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-pink-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>การออกแบบ Responsive</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-pink-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>ปรับแต่งสำหรับการสัมผัส</li>
-            <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-pink-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>โหลดเร็ว</li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-pink-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >รองรับทุกอุปกรณ์
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-pink-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >ใช้งานง่ายบนมือถือ
+            </li>
+            <li class="flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-pink-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >เร็วและเบา
+            </li>
           </ul>
         </div>
       </div>
@@ -228,55 +593,69 @@ import Layout from '../layouts/Layout.astro';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-gray-900 mb-4">
-          วิธีการทำงานของ <span class="gradient-text">MAFEAT</span>
+          เริ่มต้นใช้งาน <span class="gradient-text">MAFEAT</span> ง่ายๆ
         </h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          เริ่มต้นในไม่กี่นาทีและค้นหาพันธมิตรทางดนตรีที่เหมาะสม
+          ลงทะเบียนล่วงหน้าวันนี้ พร้อมเข้าใช้งานทันทีเมื่อเปิดตัว
         </p>
       </div>
 
       <div class="grid md:grid-cols-4 gap-8">
         <!-- Step 1 -->
         <div class="text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold"
+          >
             1
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">สมัครสมาชิก</h3>
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">
+            ลงทะเบียนล่วงหน้า
+          </h3>
           <p class="text-gray-600">
-            สร้างบัญชีของคุณโดยใช้ Google, Facebook หรือ LINE ไม่ต้องใช้รหัสผ่าน!
+            ลงทะเบียนด้วย Google, Facebook หรือ LINE รับสิทธิ์เข้าใช้งานก่อนใคร
           </p>
         </div>
 
         <!-- Step 2 -->
         <div class="text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold"
+          >
             2
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">ทำโปรไฟล์ให้สมบูรณ์</h3>
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">รอการเปิดตัว</h3>
           <p class="text-gray-600">
-            เพิ่มทักษะทางดนตรี ประเภทดนตรี และสิ่งที่คุณกำลังมองหาในพันธมิตร
+            เราจะแจ้งเตือนทางอีเมลเมื่อแพลตฟอร์มพร้อมใช้งาน
           </p>
         </div>
 
         <!-- Step 3 -->
         <div class="text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold"
+          >
             3
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">สำรวจและเชื่อมต่อ</h3>
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">
+            เข้าใช้งานทันที
+          </h3>
           <p class="text-gray-600">
-            เรียกดูแผนที่เพื่อค้นหานักดนตรีใกล้เคียงหรือเข้าร่วมการอภิปรายในฟอรัม
+            เมื่อเปิดตัว เข้าสู่ระบบและเริ่มหาพันธมิตรทำเพลงใกล้บ้าน
           </p>
         </div>
 
         <!-- Step 4 -->
         <div class="text-center">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold"
+          >
             4
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-3">สร้างสรรค์ร่วมกัน</h3>
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">
+            เริ่มทำเพลงร่วมกัน
+          </h3>
           <p class="text-gray-600">
-            เริ่มทำงานร่วมกัน แชร์ความคืบหน้า และสร้างเครือข่ายทางดนตรีของคุณ
+            ปักหมุดบนแผนที่ ค้นหานักดนตรีใกล้เคียง และเริ่มทำงานร่วมกัน
           </p>
         </div>
       </div>
@@ -289,81 +668,144 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <h2 class="text-4xl font-bold text-gray-900 mb-6">
-            เข้าร่วม<span class="gradient-text">ชุมชนดนตรีที่เติบโต</span>
+            เรามีชุมชนบน Facebook<span class="gradient-text">
+              4,000+ สมาชิกแล้ว</span
+            >
           </h2>
           <p class="text-xl text-gray-600 mb-8">
-            MAFEAT ไม่ใช่แค่เครื่องมือ แต่เป็นระบบนิเวศที่คึกคักของนักดนตรี โปรดิวเซอร์ และผู้รักดนตรี ไม่ว่าคุณจะเป็นผู้เริ่มต้นที่ต้องการเรียนรู้หรือมืออาชีพที่มีประสบการณ์ที่มองหาพันธมิตร คุณจะพบที่ของคุณที่นี่
+            กลุ่ม Facebook ของเราคึกคักมานานหลายปี แต่การหาพันธมิตรทำเพลงบน
+            Facebook มีข้อจำกัดมากมาย
+            <strong>โพสต์หายไปในฟีด</strong> ไม่รู้ว่าใครอยู่ใกล้ ค้นหายาก และจัดการข้อมูลไม่ได้
+            <br /><br />
+            นั่นคือเหตุผลที่เราสร้าง MAFEAT - แพลตฟอร์มเฉพกิจที่ออกแบบมาเพื่อนักดนตรีโดยเฉพาะ
           </p>
 
           <div class="space-y-6">
             <div class="flex items-start">
               <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600">
-                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                <div
+                  class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    ></path>
                   </svg>
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-lg font-medium text-gray-900 mb-2">ประสบการณ์ทางดนตรีที่หลากหลาย</h3>
-                <p class="text-gray-600">จากนักประพันธ์ดนตรีคลาสสิกไปจนถึงโปรดิวเซอร์อิเล็กทรอนิกส์ ชุมชนของเราครอบคลุมทุกประเภทและระดับทักษะ</p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">
+                  ชุมชน Facebook ที่มีอยู่แล้ว
+                </h3>
+                <p class="text-gray-600">
+                  เรามี 4,000+ สมาชิกบน Facebook แล้ว ครอบคลุมนักดนตรีทุกประเภท
+                  ทุกระดับทักษะ ทั่วประเทศไทย
+                </p>
               </div>
             </div>
 
             <div class="flex items-start">
               <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-100 text-cyan-600">
-                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                <div
+                  class="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-100 text-cyan-600"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-lg font-medium text-gray-900 mb-2">การเรียนรู้และการเติบโต</h3>
-                <p class="text-gray-600">แชร์ความรู้ รับข้อเสนอแนะ และพัฒนาทักษะของคุณผ่านปฏิสัมพันธ์ของชุมชน</p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">
+                  ปัญหาของ Facebook Groups
+                </h3>
+                <p class="text-gray-600">
+                  โพสต์จมลงไปในฟีด ไม่มีระบบจัดการตำแหน่ง ค้นหายาก
+                  ไม่มีระบบติดต่อโดยตรง
+                </p>
               </div>
             </div>
 
             <div class="flex items-start">
               <div class="flex-shrink-0">
-                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-amber-100 text-amber-600">
-                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                <div
+                  class="flex items-center justify-center h-12 w-12 rounded-md bg-amber-100 text-amber-600"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                   </svg>
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-lg font-medium text-gray-900 mb-2">โอกาสจริง</h3>
-                <p class="text-gray-600">หางาน สมาชิกวงดนตรี และพันธมิตรสำหรับโปรเจคดนตรีครั้งต่อไปของคุณ</p>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">
+                  MAFEAT คือทางออก
+                </h3>
+                <p class="text-gray-600">
+                  แพลตฟอร์มเฉพกิจที่ออกแบบมาเพื่อการหาพันธมิตรทำเพลง พร้อมแผนที่
+                  ระบบค้นหา และการติดต่อโดยตรง
+                </p>
               </div>
             </div>
           </div>
 
           <div class="mt-10">
-            <a href="https://app.mafeat.com" class="btn-primary">
-              เข้าร่วมชุมชน
+            <a href="https://app.mafeat.com" class="btn-primary text-lg">
+              🎯 ลงทะเบียนล่วงหน้า (ฟรี)
             </a>
           </div>
         </div>
 
         <!-- Stats / Visual -->
-        <div class="bg-gradient-to-br from-purple-100 to-cyan-100 rounded-2xl p-8">
+        <div
+          class="bg-gradient-to-br from-purple-100 to-cyan-100 rounded-2xl p-8"
+        >
+          <div class="mb-6 text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">
+              เป็นคนแรกๆ ที่ได้ใช้
+            </h3>
+            <p class="text-gray-600">จากชุมชน Facebook สู่แพลตฟอร์มเฉพกิจ</p>
+          </div>
           <div class="grid grid-cols-2 gap-6 text-center">
             <div class="bg-white rounded-xl p-6">
-              <div class="text-3xl font-bold text-purple-600 mb-2">500+</div>
-              <div class="text-gray-600">นักดนตรีที่ใช้งาน</div>
+              <div class="text-3xl font-bold text-blue-600 mb-2">4,000+</div>
+              <div class="text-gray-600">สมาชิกบน Facebook</div>
             </div>
             <div class="bg-white rounded-xl p-6">
-              <div class="text-3xl font-bold text-cyan-600 mb-2">200+</div>
-              <div class="text-gray-600">โปรเจคที่เริ่ม</div>
+              <div class="text-3xl font-bold text-purple-600 mb-2">
+                เร็วๆ นี้
+              </div>
+              <div class="text-gray-600">เปิดตัวแพลตฟอร์ม</div>
             </div>
-            <div class="bg-white rounded-xl p-6">
-              <div class="text-3xl font-bold text-amber-600 mb-2">50+</div>
-              <div class="text-gray-600">ประเภทดนตรี</div>
-            </div>
-            <div class="bg-white rounded-xl p-6">
-              <div class="text-3xl font-bold text-green-600 mb-2">1000+</div>
-              <div class="text-gray-600">โพสต์ฟอรัม</div>
+            <div class="bg-white rounded-xl p-6 col-span-2">
+              <div class="text-3xl font-bold gradient-text mb-2">100% ฟรี</div>
+              <div class="text-gray-600">
+                ไม่มีค่าใช้จ่าย ใช้งานได้ทันทีเมื่อเปิดตัว
+              </div>
             </div>
           </div>
         </div>
@@ -375,16 +817,24 @@ import Layout from '../layouts/Layout.astro';
   <section class="py-20 bg-gradient-to-br from-purple-600 to-cyan-600">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-4xl font-bold text-white mb-6">
-        พร้อมที่จะค้นหาคู่หูทางดนตรีของคุณหรือยัง?
+        อย่าพลาดโอกาสเป็นผู้ใช้งานคนแรกๆ
       </h2>
       <p class="text-xl text-purple-100 mb-10">
-        เข้าร่วมกับนักดนตรีหลายพันคนที่กำลังทำงานร่วมกัน สร้างสรรค์ และเติบโตด้วยกันบน MAFEAT
+        เราเปิดตัวเร็วๆ นี้สำหรับชุมชน 4,000+ สมาชิกของเรา
+        ลงทะเบียนล่วงหน้าวันนี้ เพื่อรับสิทธิ์เข้าใช้งานทันทีเมื่อเปิดตัว
+        <br /><strong>100% ฟรี ไม่มีค่าใช้จ่าย</strong>
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://app.mafeat.com" class="bg-white text-purple-600 px-10 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-xl">
-          เริ่มต้นใช้งานฟรี
+        <a
+          href="https://app.mafeat.com"
+          class="bg-white text-purple-600 px-10 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-xl"
+        >
+          🎯 ลงทะเบียนรับสิทธิ์ Early Access
         </a>
-        <a href="#features" class="border-2 border-white text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors">
+        <a
+          href="#features"
+          class="border-2 border-white text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors"
+        >
           เรียนรู้เพิ่มเติม
         </a>
       </div>
@@ -401,7 +851,8 @@ import Layout from '../layouts/Layout.astro';
             <span class="text-2xl font-bold text-white">MAFEAT</span>
           </div>
           <p class="text-gray-400 mb-4">
-            แพลตฟอร์มที่ดีที่สุดสำหรับนักดนตรีในการเชื่อมต่อ ทำงานร่วมกัน และสร้างสรรค์ด้วยกัน
+            แพลตฟอร์มเชื่อมต่อนักดนตรีไทย สำหรับชุมชน 4,000+ สมาชิก
+            หาพันธมิตรทำเพลงใกล้บ้านด้วยแผนที่แบบเรียลไทม์
           </p>
           <div class="flex space-x-4">
             <!-- Social links would go here -->
@@ -412,9 +863,22 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <h3 class="text-white font-semibold mb-4">สินค้า</h3>
           <ul class="space-y-2">
-            <li><a href="#features" class="hover:text-white transition-colors">คุณสมบัติ</a></li>
-            <li><a href="#how-it-works" class="hover:text-white transition-colors">วิธีใช้งาน</a></li>
-            <li><a href="https://app.mafeat.com" class="hover:text-white transition-colors">เริ่มต้นใช้งาน</a></li>
+            <li>
+              <a href="#features" class="hover:text-white transition-colors"
+                >คุณสมบัติ</a
+              >
+            </li>
+            <li>
+              <a href="#how-it-works" class="hover:text-white transition-colors"
+                >วิธีใช้งาน</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://app.mafeat.com"
+                class="hover:text-white transition-colors">เริ่มต้นใช้งาน</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -422,9 +886,21 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <h3 class="text-white font-semibold mb-4">ชุมชน</h3>
           <ul class="space-y-2">
-            <li><a href="#community" class="hover:text-white transition-colors">ฟอรัม</a></li>
-            <li><a href="#community" class="hover:text-white transition-colors">เรื่องราวความสำเร็จ</a></li>
-            <li><a href="#community" class="hover:text-white transition-colors">กิจกรรม</a></li>
+            <li>
+              <a href="#community" class="hover:text-white transition-colors"
+                >ฟอรัม</a
+              >
+            </li>
+            <li>
+              <a href="#community" class="hover:text-white transition-colors"
+                >เรื่องราวความสำเร็จ</a
+              >
+            </li>
+            <li>
+              <a href="#community" class="hover:text-white transition-colors"
+                >กิจกรรม</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -432,15 +908,29 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <h3 class="text-white font-semibold mb-4">สนับสนุน</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="hover:text-white transition-colors">ศูนย์ช่วยเหลือ</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">ติดต่อเรา</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">นโยบายความเป็นส่วนตัว</a></li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors"
+                >ศูนย์ช่วยเหลือ</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors"
+                >ติดต่อเรา</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors"
+                >นโยบายความเป็นส่วนตัว</a
+              >
+            </li>
           </ul>
         </div>
       </div>
 
       <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-        <p>&copy; 2024 MAFEAT. สงวนลิขสิทธิ์ทั้งหมด สร้างด้วย ❤️ สำหรับนักดนตรี</p>
+        <p>
+          &copy; 2024 MAFEAT. สงวนลิขสิทธิ์ทั้งหมด สร้างด้วย ❤️ สำหรับนักดนตรี
+        </p>
       </div>
     </div>
   </footer>
@@ -448,10 +938,18 @@ import Layout from '../layouts/Layout.astro';
   <!-- Animation styles -->
   <style>
     @keyframes blob {
-      0% { transform: translate(0px, 0px) scale(1); }
-      33% { transform: translate(30px, -50px) scale(1.1); }
-      66% { transform: translate(-20px, 20px) scale(0.9); }
-      100% { transform: translate(0px, 0px) scale(1); }
+      0% {
+        transform: translate(0px, 0px) scale(1);
+      }
+      33% {
+        transform: translate(30px, -50px) scale(1.1);
+      }
+      66% {
+        transform: translate(-20px, 20px) scale(0.9);
+      }
+      100% {
+        transform: translate(0px, 0px) scale(1);
+      }
     }
     .animate-blob {
       animation: blob 7s infinite;
