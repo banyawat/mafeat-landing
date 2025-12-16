@@ -41,8 +41,13 @@ import Layout from "../layouts/Layout.astro";
 
         <!-- Mobile menu button -->
         <div class="md:hidden">
-          <button type="button" class="text-gray-700 hover:text-purple-600 p-2">
+          <button
+            type="button"
+            id="mobile-menu-button"
+            class="text-gray-700 hover:text-purple-600 p-2"
+          >
             <svg
+              id="menu-icon"
               class="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
@@ -54,15 +59,57 @@ import Layout from "../layouts/Layout.astro";
                 stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
+            <svg
+              id="close-icon"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
           </button>
         </div>
       </div>
     </div>
   </nav>
 
+  <!-- Mobile menu panel -->
+  <div
+    id="mobile-menu"
+    class="fixed top-16 left-0 right-0 bg-white shadow-lg z-40 md:hidden hidden"
+  >
+    <div class="px-4 py-6 space-y-4">
+      <a
+        href="#features"
+        class="block text-gray-700 hover:text-purple-600 px-3 py-2 text-base font-medium transition-colors"
+        >คุณสมบัติ</a
+      >
+      <a
+        href="#how-it-works"
+        class="block text-gray-700 hover:text-purple-600 px-3 py-2 text-base font-medium transition-colors"
+        >วิธีใช้งาน</a
+      >
+      <a
+        href="#community"
+        class="block text-gray-700 hover:text-purple-600 px-3 py-2 text-base font-medium transition-colors"
+        >ชุมชน</a
+      >
+      <a
+        href="https://app.mafeat.com"
+        class="block btn-primary text-center text-base"
+        >เริ่มต้นใช้งาน</a
+      >
+    </div>
+  </div>
+
   <!-- Hero Section -->
   <section
-    class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-50 via-white to-cyan-50"
+    class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-50 via-white to-cyan-50 pt-20"
   >
     <div
       class="absolute inset-0 bg-gradient-to-r from-purple-600/5 to-cyan-600/5"
@@ -95,11 +142,12 @@ import Layout from "../layouts/Layout.astro";
         <p
           class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed"
         >
-          หาพันธมิตรทำเพลงใกล้บ้านด้วยแผนที่แบบเรียลไทม์ ชุมชนของเรามี <strong
-            >4,000+ สมาชิก</strong
-          > บน Facebook และตอนนี้เรากำลังสร้างแพลตฟอร์มเฉพกิจ พร้อมระบบแผนที่ ฟอรัม
+          หาพันธมิตรทำเพลงใกล้บ้านด้วยแผนที่แบบเรียลไทม์
+          <br /><br />
+          ชุมชนของเรามี <strong>4,000+ สมาชิก</strong> บน Facebook แล้ว
+          และตอนนี้เรากำลังสร้างแพลตฟอร์มเฉพาะกิจ พร้อมระบบแผนที่ ฟอรัม
           และการติดต่อโดยตรง
-          <br /><strong class="text-purple-600">เป็นคนแรกที่เข้าร่วม</strong>
+          <br /><br /><strong class="text-purple-600">เป็นคนแรกที่เข้าร่วม!</strong>
         </p>
 
         <!-- CTA Buttons -->
@@ -192,7 +240,7 @@ import Layout from "../layouts/Layout.astro";
           ทำไมต้อง <span class="gradient-text">MAFEAT</span>?
         </h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          กลุ่ม Facebook ไม่เพียงพอในการจัดการชุมชนนักดนตรีอีกต่อไป
+          กลุ่ม Facebook ไม่เพียงพอในการจัดการชุมชนนักดนตรีอีกต่อไป<br />
           เราสร้างแพลตฟอร์มที่ออกแบบมาเฉพาะสำหรับการหาพันธมิตรทำเพลง
         </p>
       </div>
@@ -226,10 +274,10 @@ import Layout from "../layouts/Layout.astro";
             หาพันธมิตรด้วยแผนที่แบบเรียลไทม์
           </h3>
           <p class="text-gray-600 mb-4">
-            ปัญหา: โพสต์หาพันธมิตรบน Facebook หายไปในฟีด ไม่รู้ว่าใครอยู่ใกล้ตัว<br
-            />
+            <strong>ปัญหา:</strong> โพสต์หาพันธมิตรบน Facebook หายไปในฟีด
+            ไม่รู้ว่าใครอยู่ใกล้ตัว<br />
             <strong class="text-purple-600">วิธีแก้:</strong> ปักหมุดตำแหน่งบนแผนที่
-            ดูใครอยู่ใกล้คุณ กรองตามประเภทดนตรี
+            ดูใครอยู่ใกล้คุณ และกรองตามประเภทดนตรี
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
             <li class="flex items-center">
@@ -291,10 +339,10 @@ import Layout from "../layouts/Layout.astro";
             ฟอรัมชุมชนที่จัดระเบียบได้
           </h3>
           <p class="text-gray-600 mb-4">
-            ปัญหา: คอมเมนต์บน Facebook ยาวๆ ยากต่อการติดตาม
-            ค้นหาข้อมูลเก่าไม่เจอ<br />
+            <strong>ปัญหา:</strong> คอมเมนต์บน Facebook ยาวๆ ยากต่อการติดตาม
+            และค้นหาข้อมูลเก่าไม่เจอ<br />
             <strong class="text-cyan-600">วิธีแก้:</strong> ฟอรัมที่แบ่งหมวดหมู่ ค้นหาง่าย
-            จัดเก็บความรู้ของชุมชน
+            และจัดเก็บความรู้ของชุมชน
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
             <li class="flex items-center">
@@ -356,8 +404,8 @@ import Layout from "../layouts/Layout.astro";
             เข้าสู่ระบบง่ายด้วย Social Login
           </h3>
           <p class="text-gray-600 mb-4">
-            ปัญหา: ไม่อยากจดจำรหัสผ่านอีก<br />
-            <strong class="text-amber-600">วิธีแก้:</strong> เข้าสู่ระบบด้วย Google,
+            <strong>ปัญหา:</strong> ไม่อยากจดจำรหัสผ่านอีก<br />
+            <strong class="text-amber-600">วิธีแก้:</strong> เข้าสู่ระบบด้วย Google
             Facebook หรือ LINE ในคลิกเดียว
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
@@ -420,8 +468,9 @@ import Layout from "../layouts/Layout.astro";
             ติดต่อนักดนตรีได้โดยตรง
           </h3>
           <p class="text-gray-600 mb-4">
-            ปัญหา: ต้องคอมเมนต์บน Facebook แล้วรอนักดนตรีคนนั้นเห็น<br />
-            <strong class="text-green-600">วิธีแก้:</strong> กดติดต่อโดยตรง ระบบส่งอีเมลแจ้งเตือนอัตโนมัติ
+            <strong>ปัญหา:</strong> ต้องคอมเมนต์บน Facebook แล้วรอนักดนตรีคนนั้นเห็น<br />
+            <strong class="text-green-600">วิธีแก้:</strong> กดติดต่อโดยตรง
+            ระบบส่งอีเมลแจ้งเตือนอัตโนมัติ
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
             <li class="flex items-center">
@@ -484,7 +533,7 @@ import Layout from "../layouts/Layout.astro";
           </h3>
           <p class="text-gray-600 mb-4">
             แสดงข้อมูลนักดนตรี ประวัติการทำงานร่วมกัน และสถิติกิจกรรม
-            ทำให้คนอื่นรู้จักคุณ
+            เพื่อให้คนอื่นรู้จักคุณมากขึ้น
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
             <li class="flex items-center">
@@ -546,7 +595,8 @@ import Layout from "../layouts/Layout.astro";
             ใช้งานได้ทั้งมือถือและคอม
           </h3>
           <p class="text-gray-600 mb-4">
-            หานักดนตรีได้ทุกที่ทุกเวลา ใช้งานบนมือถือ แท็บเล็ต และคอมพิวเตอร์
+            หานักดนตรีได้ทุกที่ทุกเวลา<br />
+            ใช้งานบนมือถือ แท็บเล็ต และคอมพิวเตอร์
           </p>
           <ul class="text-sm text-gray-500 space-y-2 text-left">
             <li class="flex items-center">
@@ -612,7 +662,8 @@ import Layout from "../layouts/Layout.astro";
             ลงทะเบียนล่วงหน้า
           </h3>
           <p class="text-gray-600">
-            ลงทะเบียนด้วย Google, Facebook หรือ LINE รับสิทธิ์เข้าใช้งานก่อนใคร
+            ลงทะเบียนด้วย Google, Facebook หรือ LINE<br />
+            รับสิทธิ์เข้าใช้งานก่อนใคร
           </p>
         </div>
 
@@ -640,7 +691,8 @@ import Layout from "../layouts/Layout.astro";
             เข้าใช้งานทันที
           </h3>
           <p class="text-gray-600">
-            เมื่อเปิดตัว เข้าสู่ระบบและเริ่มหาพันธมิตรทำเพลงใกล้บ้าน
+            เมื่อเปิดตัว เข้าสู่ระบบ<br />
+            และเริ่มหาพันธมิตรทำเพลงใกล้บ้าน
           </p>
         </div>
 
@@ -655,7 +707,8 @@ import Layout from "../layouts/Layout.astro";
             เริ่มทำเพลงร่วมกัน
           </h3>
           <p class="text-gray-600">
-            ปักหมุดบนแผนที่ ค้นหานักดนตรีใกล้เคียง และเริ่มทำงานร่วมกัน
+            ปักหมุดบนแผนที่ ค้นหานักดนตรีใกล้เคียง<br />
+            และเริ่มทำงานร่วมกัน
           </p>
         </div>
       </div>
@@ -673,11 +726,14 @@ import Layout from "../layouts/Layout.astro";
             >
           </h2>
           <p class="text-xl text-gray-600 mb-8">
-            กลุ่ม Facebook ของเราคึกคักมานานหลายปี แต่การหาพันธมิตรทำเพลงบน
-            Facebook มีข้อจำกัดมากมาย
-            <strong>โพสต์หายไปในฟีด</strong> ไม่รู้ว่าใครอยู่ใกล้ ค้นหายาก และจัดการข้อมูลไม่ได้
+            กลุ่ม Facebook ของเราคึกคักมานานหลายปี
+            แต่การหาพันธมิตรทำเพลงบน Facebook มีข้อจำกัดมากมาย
             <br /><br />
-            นั่นคือเหตุผลที่เราสร้าง MAFEAT - แพลตฟอร์มเฉพกิจที่ออกแบบมาเพื่อนักดนตรีโดยเฉพาะ
+            <strong>โพสต์หายไปในฟีด</strong> ไม่รู้ว่าใครอยู่ใกล้
+            ค้นหายาก และจัดการข้อมูลไม่ได้
+            <br /><br />
+            นั่นคือเหตุผลที่เราสร้าง MAFEAT
+            แพลตฟอร์มเฉพาะกิจที่ออกแบบมาเพื่อนักดนตรีโดยเฉพาะ
           </p>
 
           <div class="space-y-6">
@@ -706,8 +762,8 @@ import Layout from "../layouts/Layout.astro";
                   ชุมชน Facebook ที่มีอยู่แล้ว
                 </h3>
                 <p class="text-gray-600">
-                  เรามี 4,000+ สมาชิกบน Facebook แล้ว ครอบคลุมนักดนตรีทุกประเภท
-                  ทุกระดับทักษะ ทั่วประเทศไทย
+                  เรามี 4,000+ สมาชิกบน Facebook แล้ว
+                  ครอบคลุมนักดนตรีทุกประเภท ทุกระดับทักษะ ทั่วประเทศไทย
                 </p>
               </div>
             </div>
@@ -736,8 +792,8 @@ import Layout from "../layouts/Layout.astro";
                   ปัญหาของ Facebook Groups
                 </h3>
                 <p class="text-gray-600">
-                  โพสต์จมลงไปในฟีด ไม่มีระบบจัดการตำแหน่ง ค้นหายาก
-                  ไม่มีระบบติดต่อโดยตรง
+                  โพสต์จมลงไปในฟีด ไม่มีระบบจัดการตำแหน่ง
+                  ค้นหายาก และไม่มีระบบติดต่อโดยตรง
                 </p>
               </div>
             </div>
@@ -766,8 +822,8 @@ import Layout from "../layouts/Layout.astro";
                   MAFEAT คือทางออก
                 </h3>
                 <p class="text-gray-600">
-                  แพลตฟอร์มเฉพกิจที่ออกแบบมาเพื่อการหาพันธมิตรทำเพลง พร้อมแผนที่
-                  ระบบค้นหา และการติดต่อโดยตรง
+                  แพลตฟอร์มเฉพาะกิจที่ออกแบบมาเพื่อการหาพันธมิตรทำเพลง
+                  พร้อมแผนที่ ระบบค้นหา และการติดต่อโดยตรง
                 </p>
               </div>
             </div>
@@ -820,7 +876,7 @@ import Layout from "../layouts/Layout.astro";
         อย่าพลาดโอกาสเป็นผู้ใช้งานคนแรกๆ
       </h2>
       <p class="text-xl text-purple-100 mb-10">
-        เราเปิดตัวเร็วๆ นี้สำหรับชุมชน 4,000+ สมาชิกของเรา
+        เราเปิดตัวเร็วๆ นี้สำหรับชุมชน 4,000+ สมาชิกของเรา<br />
         ลงทะเบียนล่วงหน้าวันนี้ เพื่อรับสิทธิ์เข้าใช้งานทันทีเมื่อเปิดตัว
         <br /><strong>100% ฟรี ไม่มีค่าใช้จ่าย</strong>
       </p>
@@ -851,7 +907,7 @@ import Layout from "../layouts/Layout.astro";
             <span class="text-2xl font-bold text-white">MAFEAT</span>
           </div>
           <p class="text-gray-400 mb-4">
-            แพลตฟอร์มเชื่อมต่อนักดนตรีไทย สำหรับชุมชน 4,000+ สมาชิก
+            แพลตฟอร์มเชื่อมต่อนักดนตรีไทย สำหรับชุมชน 4,000+ สมาชิก<br />
             หาพันธมิตรทำเพลงใกล้บ้านด้วยแผนที่แบบเรียลไทม์
           </p>
           <div class="flex space-x-4">
@@ -958,4 +1014,40 @@ import Layout from "../layouts/Layout.astro";
       animation-delay: 2s;
     }
   </style>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    // Mobile menu toggle functionality
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+
+    // Toggle mobile menu
+    mobileMenuButton?.addEventListener('click', () => {
+      mobileMenu?.classList.toggle('hidden');
+      menuIcon?.classList.toggle('hidden');
+      closeIcon?.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu?.classList.add('hidden');
+        menuIcon?.classList.remove('hidden');
+        closeIcon?.classList.add('hidden');
+      });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (event) => {
+      const target = event.target as HTMLElement;
+      if (!mobileMenuButton?.contains(target) && !mobileMenu?.contains(target)) {
+        mobileMenu?.classList.add('hidden');
+        menuIcon?.classList.remove('hidden');
+        closeIcon?.classList.add('hidden');
+      }
+    });
+  </script>
 </Layout>

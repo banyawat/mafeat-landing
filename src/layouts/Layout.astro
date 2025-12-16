@@ -28,15 +28,18 @@ const { title } = Astro.props;
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="MAFEAT - แพลตฟอร์มเชื่อมต่อนักดนตรีไทย" />
     <meta name="twitter:description" content="จากชุมชน Facebook 4,000+ สมาชิก สู่แพลตฟอร์มเชื่อมต่อนักดนตรีที่ครบครัน" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
     <style>
       html {
         scroll-behavior: smooth;
+        height: 100%;
       }
       body {
         font-family: Kanit, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        min-height: 100%;
+        position: relative;
       }
     </style>
   </head>
